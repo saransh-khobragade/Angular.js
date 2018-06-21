@@ -1,0 +1,13 @@
+Search by <input type="text" ng-model="search">
+<table border=1>
+  <tr>
+    <td>ID</td>
+    <td>Fisrt Name</td>
+	<td>Last name</td>
+  </tr>
+  <tr ng-repeat="x in details | filter:search">
+    <td>{{ x.id }}</td>
+    <td>{{ x.first_name }}</td>
+	<td>{{ x.last_name }}</td>
+  </tr>
+</table>
